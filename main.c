@@ -82,5 +82,11 @@ int main() {
         {"Arthur", "4321"}
     };
 
+    int encontrado = 0;
+
+    char login_nome[20];
+    char login_senha[20];
+
+
     return 0;
 }
