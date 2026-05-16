@@ -14,9 +14,10 @@ void switch_case() {
         printf("SEU SALDO ATUAL E DE: R$ %.2f\n", saldo);
         printf("================================\n");
 
-        printf("0 - Deposito\n");
-        printf("1 - Saque\n");
-        printf("2 - Encerrar programa\n");
+        printf("1 - Deposito\n");
+        printf("2 - Saque\n");
+        printf("3 - Realizar extrato\n");
+        printf("0 - Encerrar programa\n");
         printf("================================\n");
 
         printf("Escolha uma opcao: ");
@@ -24,19 +25,24 @@ void switch_case() {
 
         switch (escolha) {
 
-            case 0:
-
-                saldo += deposito();
-
-                break;
-
             case 1:
 
-                saldo -= saque(saldo);
-
+                saldo += deposito();
                 break;
 
             case 2:
+
+                saldo -= saque(saldo);
+                //printf("\nSeu Saldo Atual e de: R$ %.2f\n", saldo);
+                break;
+
+            case 3:
+
+                printf("\nImplementar funcao extrato\n");
+
+                break;
+
+            case 0:
 
                 printf("Encerrando sessao...\n");
 
@@ -47,5 +53,5 @@ void switch_case() {
                 printf("Opcao invalida!\n");
         }
 
-    } while (escolha != 2);
+    } while (escolha != 0);
 }

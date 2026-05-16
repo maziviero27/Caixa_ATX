@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-float deposito();
-float saque(float var1);
 void switch_case();
 
 int main() {
